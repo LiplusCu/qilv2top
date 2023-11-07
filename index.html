@@ -1,1 +1,32 @@
-变异螃蟹！！！
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    .animated-text {
+      font-size: 40px;
+      font-weight: bold;
+      text-align: center;
+      animation: textAnimation 4s infinite;
+    }
+
+    @keyframes textAnimation {
+      0% { transform: scale(1) rotate(0deg); color: blue; }
+      25% { transform: scale(1.2) rotate(90deg); color: red; }
+      50% { transform: scale(1.4) rotate(180deg); color: green; }
+      75% { transform: scale(1.2) rotate(270deg); color: purple; }
+      100% { transform: scale(1) rotate(360deg); color: blue; }
+    }
+  </style>
+</head>
+<body>
+  <div class="animated-text">变异螃蟹</div>
+
+  <script>
+    // 可选：如果您希望文本在页面加载时进行动画效果，可以使用 JavaScript 动态添加类名。
+    document.addEventListener('DOMContentLoaded', function() {
+      const text = document.querySelector('.animated-text');
+      text.classList.add('animated-text');
+    });
+  </script>
+</body>
+</html>
